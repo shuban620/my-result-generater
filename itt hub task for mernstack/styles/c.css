@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+
+body{
+font-family: "lobster";
+}
+
+.container-fluid {
+    background-image: url('images/background of result card.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.function {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 10px;
+    border: 5px solid greenyellow;
+    background-color: sienna;
+    color: azure;
+    font-size: larger;
+    font-weight: bold;
+    text-align: center;
+}
+
+.bg-custom {
+    background-image: url('./images/background\ of\ result\ card.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+}

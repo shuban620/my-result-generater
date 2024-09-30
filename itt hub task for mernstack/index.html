@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0 shrink-to-fit=no">
+    <link rel="stylesheet" href="./styles/bootstrap.min.css">
+    <link rel="stylesheet" href="./styles/c.css">
+    <title>Document</title>
+</head>
+
+<body style="background-image: url(./images/background\ of\ result\ card.jpg);background-repeat: no-repeat;
+background-position: center;background-attachment: fixed;" class="image-responsive image-fluid">
+    <section class="container-fluid pt-5 pb-5 section-1">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 col-md-6 col-sm-12">
+                        <h1 class="text-center fs-1 text-white font-weight-bold mb-5">Result Card</h1>
+                        <p class="text-center fs-2 text-white font-weight-bold mb-5">THE result will be quickly announced in front of you!!.</p>
+                            <img src="" alt="logo" class="img-fluid">
+                        </p>
+                    </div>
+                    <div class="col-md-6 col-md-6 col-sm-12">
+                        <img class="img-fluid rounded-circle" src="./images/hero image.webp" alt="logo image">
+                    </div>
+                </div>
+            </div>
+    </section>
+    <div class="container-fluid">
+        <div class="container pt-5 pb-5">
+            <div class="row">
+                <table id="form1" class="col-12 table table-bordered border-radius-20">
+                    <tr class="table-active text-center justify-content-center bg-primary">
+                        <th>Subjects</th>
+                        <th>Total Marks</th>
+                        <th>Obtained Marks</th>
+                        <th>Result Status</th>
+                    </tr>
+                    <tr>
+                        <td>English</td>
+                        <td>100</td>
+                        <td><input type="number" id="txtnum1"></td>
+                        <td>
+                            <div class="result"> </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Urdu</td>
+                        <td>100</td>
+                        <td><input type="number" id="txtnum2"></td>
+                        <td>
+                            <div class="result"> </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Maths</td>
+                        <td>100</td>
+                        <td><input type="number" id="txtnum3"></td>
+                        <td>
+                            <div class="result"> </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Science</td>
+                        <td>100</td>
+                        <td><input type="number" id="txtnum4"></td>
+                        <td>
+                            <div class="result"> </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Social Science</td>
+                        <td>100</td>
+                        <td><input type="number" id="txtnum5"></td>
+                        <td>
+                            <div class="result"> </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Final result out of 500</td>
+                        <td>
+                            <div id="output"></div>
+                        </td>
+                        <td>
+                            <div id="result"> </div>
+                        </td>
+                        <td>AS SHOWN BELOW</td>
+                    </tr>
+                </table>
+            </div>
+            <button class="btn btn-success btn-lg btn-block" type="button" value="Calculate"
+                onclick="calculate()">CALCULATE</button>
+        </div>
+    </div>
+    <script src="./js/index.js"></script>
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/bootstrap.min.js"></script>
+</body>
+
+</html>
