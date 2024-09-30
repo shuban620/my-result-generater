@@ -30,3 +30,11 @@ font-family: "lobster";
     background-repeat: no-repeat;
     background-position: center;
 }
+
+#output {
+    color: turquoise;
+}
+
+.result{
+    color: yellowgreen;
+}
