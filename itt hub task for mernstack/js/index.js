@@ -8,17 +8,50 @@ function calculate() {
     var result = a + b + c + d + e;
     var avg = result / 5;
 
-    // Output the result and average
-    var output = "The obtained marks are : " + result + "<br>";
-    output += "The average of the numbers is: " + avg + "<br>";
+    var output = "The obtained marks are: " + result + "<br>";
+    output += "The average of the numbers is: " + avg + "%<br>";
+
+    var resultElement = document.getElementsByClassName("result")[0];
 
     if (avg >= 50) {
         output += "Pass<br>";
-        document.getElementsByClassName("result")[0].innerHTML = "congratulations! You have passed the exam.";
+        resultElement.style.color = "green";
+        resultElement.innerHTML = "Congratulations! You have passed the exam.";
     } else {
         output += "Fail<br>";
-        document.getElementsByClassName("result")[0].innerHTML = "Sorry! You have failed the exam.";
+        resultElement.style.color = "red";
+        resultElement.innerHTML = "Sorry! You have failed the exam.";
     }
 
     document.getElementById("output").innerHTML = output;
 }
+
+const swiper = new Swiper('.swiper', {
+    // Optional parameters
+    effect: 'flip',
+    autoplay: {
+      delay: 1000,
+      disableOnInteraction: false,
+    },
+    direction: 'horizontal',
+    loop: true,
+  
+    // If we need pagination
+    pagination: {
+      el: '.swiper-pagination',
+    },
+  
+    // Navigation arrows
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+    mousewheel: {
+      invert: true,
+    },
+    // And if we need scrollbar
+    scrollbar: {
+      el: '.swiper-scrollbar',
+    },
+  });
+  

@@ -4,29 +4,55 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0 shrink-to-fit=no">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
     <link rel="stylesheet" href="./styles/bootstrap.min.css">
     <link rel="stylesheet" href="./styles/c.css">
     <title>Document</title>
 </head>
+
 <body style="background-image: url(./images/background\ of\ result\ card.jpg);background-repeat: no-repeat;
 background-position: center;background-attachment: fixed;" class="image-responsive image-fluid">
+<section class="container-fluid pt-5 pb-5 section-1">
+    <div class="container">
+    <div class="swiper">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+          <!-- Slides -->
+          <div class="swiper-slide"><h1 class="masthead-heading mb-0">Lets</h1></div>
+          <div class="swiper-slide"><h1 class="masthead-heading mb-0">Get</h1></div>
+          <div class="swiper-slide"><h1 class="masthead-heading mb-0">Started !</h1></div>
+    
+        </div>
+        <!-- If we need pagination -->
+        <!-- <div class="swiper-pagination"></div> -->
+      
+        <!-- If we need navigation buttons -->
+        <!-- <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div> -->
+      
+        <!-- If we need scrollbar -->
+        <!-- <div class="swiper-scrollbar"></div> -->
+      </div>
+    </div>
+</section>
     <section class="container-fluid pt-5 pb-5 section-1">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-6 col-md-6 col-sm-12">
-                        <h1 class="text-center fs-1 text-white font-weight-bold mb-5">Result Card</h1>
-                        <p class="text-center fs-2 text-white font-weight-bold mb-5">The result will be quickly announced in front of you!!.</p>
-                    </div>
-                    <div class="col-md-6 col-md-6 col-sm-12">
-                        <img class="img-fluid rounded-circle" src="./images/hero image.webp" alt="logo image">
-                    </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 col-md-6 col-sm-12">
+                    <h1 class="text-center fs-1 text-dark font-weight-bold mb-5">Result Card</h1>
+                    <p class="text-center fs-2 text-dark font-weight-bold mb-5">The result will be quickly announced in
+                        front of you!!.</p>
+                </div>
+                <div class="col-md-6 col-md-6 col-sm-12">
+                    <img class="img-fluid rounded-circle" src="./images/hero image.webp" alt="logo image">
                 </div>
             </div>
+        </div>
     </section>
     <div class="container-fluid">
-        <div class="container pt-5 pb-5">
+        <div class="container">
             <div class="row">
-                <table id="form1" class="col-12 table table-bordered table-hover">
+                <table id="form1" class="table table-bordered table-hover">
                     <tr class="table-active text-center justify-content-center bg-primary">
                         <th>Subjects</th>
                         <th>Total Marks</th>
@@ -36,7 +62,7 @@ background-position: center;background-attachment: fixed;" class="image-responsi
                     <tr>
                         <td>English</td>
                         <td>100</td>
-                        <td><input type="number" id="txtnum1"></td>
+                        <td><input class="border-0" type="number" id="txtnum1"></td>
                         <td>
                             <div class="result"> </div>
                         </td>
@@ -44,7 +70,7 @@ background-position: center;background-attachment: fixed;" class="image-responsi
                     <tr>
                         <td>Urdu</td>
                         <td>100</td>
-                        <td><input type="number" id="txtnum2"></td>
+                        <td><input class="border-0" type="number" id="txtnum2"></td>
                         <td>
                             <div class="result"> </div>
                         </td>
@@ -52,7 +78,7 @@ background-position: center;background-attachment: fixed;" class="image-responsi
                     <tr>
                         <td>Maths</td>
                         <td>100</td>
-                        <td><input type="number" id="txtnum3"></td>
+                        <td><input class="border-0" type="number" id="txtnum3"></td>
                         <td>
                             <div class="result"> </div>
                         </td>
@@ -60,7 +86,7 @@ background-position: center;background-attachment: fixed;" class="image-responsi
                     <tr>
                         <td>Science</td>
                         <td>100</td>
-                        <td><input type="number" id="txtnum4"></td>
+                        <td><input class="border-0" type="number" id="txtnum4"></td>
                         <td>
                             <div class="result"> </div>
                         </td>
@@ -68,7 +94,7 @@ background-position: center;background-attachment: fixed;" class="image-responsi
                     <tr>
                         <td>Social Science</td>
                         <td>100</td>
-                        <td><input type="number" id="txtnum5"></td>
+                        <td><input class="border-0" type="number" id="txtnum5"></td>
                         <td>
                             <div class="result"> </div>
                         </td>
@@ -81,14 +107,15 @@ background-position: center;background-attachment: fixed;" class="image-responsi
                         <td>
                             <div id="result"> </div>
                         </td>
-                        <td>AS SHOWN BELOW</td>
+                        <td>As Shown Below</td>
                     </tr>
                 </table>
             </div>
-            <button class="btn btn-success btn-lg btn-block" type="button" value="Calculate"
-                onclick="calculate()">CALCULATE</button>
+            <button class="btn btn-success btn-lg btn-block mb-5" type="button" value="Calculate"
+                onclick="calculate()">Calculate</button>
         </div>
     </div>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="./js/index.js"></script>
     <script src="./js/bootstrap.bundle.min.js"></script>
     <script src="./js/bootstrap.min.js"></script>
