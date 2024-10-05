@@ -22,7 +22,7 @@ font-family: "lobster";
 }
 
 .swiper-container {
-    width: 100%;
+    width: 50%;
     height: 100px;
 }
   
@@ -41,6 +41,7 @@ font-family: "lobster";
 /* For .masthead-heading, use gradient on text */
 .masthead-heading {
     background: linear-gradient(to bottom, rgb(248, 248, 20), #191999);
+    background-clip: content-box;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     font-size: 100px;
