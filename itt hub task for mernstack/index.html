@@ -10,97 +10,103 @@
     <title>Result Generator</title>
 </head>
 
-<body style="background-image: url(./images/background\ of\ result\ card.jpg);background-repeat: no-repeat;
-background-position: center;background-attachment: fixed;" class="image-responsive image-fluid">
-    <section class="container-fluid pt-5 pb-5 section-1">
-        <div class="container">
-            <div class="swiper">
-                <!-- Additional required wrapper -->
-                <div class="swiper-wrapper">
-                    <!-- Slides -->
-                    <div class="swiper-slide">
-                        <h1 class="masthead-heading mb-0">Lets</h1>
+<body>
+    <video autoplay muted loop id="myVideo">
+        <source src="./images/background video.mp4" type="video/mp4">
+        Your browser does not support HTML5 video.
+    </video>
+    <div class="container-fluid video-container">
+        <section class="container-fluid pt-5 pb-5 section-1">
+            <div class="container">
+                <div class="swiper">
+                    <!-- Additional required wrapper -->
+                    <div class="swiper-wrapper">
+                        <!-- Slides -->
+                        <div class="swiper-slide">
+                            <h1 class="masthead-heading mb-0">Lets</h1>
+                        </div>
+                        <div class="swiper-slide">
+                            <h1 class="masthead-heading mb-0">Get</h1>
+                        </div>
+                        <div class="swiper-slide">
+                            <h1 class="masthead-heading mb-0">Started !</h1>
+                        </div>
                     </div>
-                    <div class="swiper-slide">
-                        <h1 class="masthead-heading mb-0">Get</h1>
-                    </div>
-                    <div class="swiper-slide">
-                        <h1 class="masthead-heading mb-0">Started !</h1>
-                    </div>
-                </div>
-                <!-- If we need pagination -->
-                <!-- <div class="swiper-pagination"></div> -->
+                    <!-- If we need pagination -->
+                    <!-- <div class="swiper-pagination"></div> -->
 
-                <!-- If we need navigation buttons -->
-                <!-- <div class="swiper-button-prev"></div>
+                    <!-- If we need navigation buttons -->
+                    <!-- <div class="swiper-button-prev"></div>
         <div class="swiper-button-next"></div> -->
 
-                <!-- If we need scrollbar -->
-                <!-- <div class="swiper-scrollbar"></div> -->
-            </div>
-        </div>
-    </section>
-    <section class="container-fluid pt-5 pb-5 section-1">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-6 col-md-6 col-sm-12">
-                    <h1 class="text-center fs-1 text-dark font-weight-bold mb-5">Result Card</h1>
-                    <p class="text-center fs-2 text-dark font-weight-bold mb-5">The result will be quickly announced in
-                        front of you!!.</p>
-                </div>
-                <div class="col-md-6 col-md-6 col-sm-12">
-                    <img class="img-fluid rounded-circle" src="./images/hero image.webp" alt="logo image">
+                    <!-- If we need scrollbar -->
+                    <!-- <div class="swiper-scrollbar"></div> -->
                 </div>
             </div>
-        </div>
-    </section>
-    <div class="container-fluid">
-        <div class="container">
-            <div class="row">
-                <table id="form1" class="table col-sm-12 table-bordered table-hover">
-                    <tr class="table-active text-center justify-content-center bg-primary">
-                        <th>Subjects</th>
-                        <th>Total Marks</th>
-                        <th>Obtained Marks</th>
-                    </tr>
-                    <tr>
-                        <td>English</td>
-                        <td>100</td>
-                        <td><input class="border-0" type="number" id="txtnum1"></td>
-                    </tr>
-                    <tr>
-                        <td>Urdu</td>
-                        <td>100</td>
-                        <td><input class="border-0" type="number" id="txtnum2"></td>
-                    </tr>
-                    <tr>
-                        <td>Maths</td>
-                        <td>100</td>
-                        <td><input class="border-0" type="number" id="txtnum3"></td>
-                    </tr>
-                    <tr>
-                        <td>Science</td>
-                        <td>100</td>
-                        <td><input class="border-0" type="number" id="txtnum4"></td>
-                    </tr>
-                    <tr>
-                        <td>Social Science</td>
-                        <td>100</td>
-                        <td><input class="border-0" type="number" id="txtnum5"></td>
-                    </tr>
-                    <tr>
-                        <td>Final result out of 500</td>
-                        <td>
-                            <div id="output"></div>
-                        </td>
-                        <td>
-                            <div class="result" id="result"> </div>
-                        </td>
-                    </tr>
-                </table>
+        </section>
+        <section class="container-fluid pt-5 pb-5 section-1">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 col-md-6 col-sm-12">
+                        <h1 class="text-center fs-1 text-light font-weight-bold mb-5">Result Card</h1>
+                        <p class="text-center fs-2 text-light font-weight-bold mb-5">The result will be quickly announced
+                            in
+                            front of you!!.</p>
+                    </div>
+                    <div class="col-md-6 col-md-6 col-sm-12">
+                        <img class="img-fluid rounded-circle" src="./images/hero image.webp" alt="logo image">
+                    </div>
+                </div>
             </div>
-            <button class="btn btn-success btn-lg btn-block mb-5" type="button" value="Calculate"
-                onclick="calculate()">Calculate</button>
+        </section>
+        <div class="container-fluid">
+            <div class="container">
+                <div class="row">
+                    <table id="form1" class="table col-sm-12 table-bordered table-hover">
+                        <tr class="table-active text-center justify-content-center bg-primary">
+                            <th>Subjects</th>
+                            <th>Total Marks</th>
+                            <th>Obtained Marks</th>
+                        </tr>
+                        <tr>
+                            <td>English</td>
+                            <td>100</td>
+                            <td><input class="border-0" type="number" id="txtnum1"></td>
+                        </tr>
+                        <tr>
+                            <td>Urdu</td>
+                            <td>100</td>
+                            <td><input class="border-0" type="number" id="txtnum2"></td>
+                        </tr>
+                        <tr>
+                            <td>Maths</td>
+                            <td>100</td>
+                            <td><input class="border-0" type="number" id="txtnum3"></td>
+                        </tr>
+                        <tr>
+                            <td>Science</td>
+                            <td>100</td>
+                            <td><input class="border-0" type="number" id="txtnum4"></td>
+                        </tr>
+                        <tr>
+                            <td>Social Science</td>
+                            <td>100</td>
+                            <td><input class="border-0" type="number" id="txtnum5"></td>
+                        </tr>
+                        <tr>
+                            <td>Final result out of 500</td>
+                            <td>
+                                <div id="output"></div>
+                            </td>
+                            <td>
+                                <div class="result" id="result"> </div>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <button class="btn btn-success btn-lg btn-block mb-5" type="button" value="Calculate"
+                    onclick="calculate()">Calculate</button>
+            </div>
         </div>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
